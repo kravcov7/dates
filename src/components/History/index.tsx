@@ -20,8 +20,6 @@ function History({ data }: HistoricalDatesProps) {
         <div className={styles.pagination}>01/06</div>
         <Button />
         <CardsSlider />
-        <div className={styles.pagination2}>стрелки</div>
-        <div className={styles.cards}>cards</div>
       </div>
     </>
   );

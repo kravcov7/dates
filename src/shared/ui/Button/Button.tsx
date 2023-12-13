@@ -8,9 +8,7 @@ export const Button: FC<ButtonHTMLAttributes<HTMLButtonElement>> = (props) => {
 
   return (
     <button type="button" className={styles.button}>
-      {/* <Image src={Arrow} alt="My SVG" width={200} height={200} /> */}
       <Image src={Arrow} alt="arrow" width={12} height={14} />
-      {/* <Arrow /> */}
       {children}
     </button>
   );
