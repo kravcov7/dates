@@ -1,8 +1,10 @@
+'use client'
+
+import React from "react";
 import styles from "./CardsSlider.module.css";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination } from 'swiper/modules';
-import { Pagination, Navigation } from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -18,20 +20,30 @@ export const CardsSlider = () => {
     {
       id: 2,
       title: "First",
-      description: "First card",
+      description: "22222",
     },
     {
       id: 3,
       title: "First",
-      description: "First card",
+      description: "3333",
+    },
+    {
+      id: 4,
+      title: "First",
+      description: "4444",
+    },
+    {
+      id: 5,
+      title: "First",
+      description: "55555",
     },
   ];
 
   return (
     <div className={styles.slider}>
-      <Swiper></Swiper>
 
-      {/* <Swiper
+
+      <Swiper
         className={styles.mySwiper}
         wrapperClass={styles.wrapper}
         spaceBetween={25}
@@ -64,7 +76,7 @@ export const CardsSlider = () => {
             </SwiperSlide>
           );
         })}
-      </Swiper> */}
+      </Swiper>
     </div>
   );
 };
