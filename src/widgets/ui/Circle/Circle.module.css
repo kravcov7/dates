@@ -1,0 +1,47 @@
+.circle {
+  width: 530px;
+  height: 530px;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(66, 86, 122, 0.2);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  top: -50%;
+  left: 0;
+}
+
+.dates {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+  color: #ef5da8;
+
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "PTSans Bold", sans-serif;
+  position: absolute;
+  top: -38%;
+  /* right: 0; */
+  left: 0;
+  margin-left: -273px;
+  font-size: 200px;
+  letter-spacing: -4px;
+}
+
+.start {
+  color: #5d5fef;
+}

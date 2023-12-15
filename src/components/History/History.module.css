@@ -1,6 +1,6 @@
 .history {
-  border-left: 1px solid green;
-  border-right: 1px solid green;
+  border-right: 1px solid rgba(66, 86, 122, 0.1);
+  border-left: 1px solid rgba(66, 86, 122, 0.1);
   min-height: 100vh;
   margin: 0 160px 0 320px;
   padding-top: 170px;
@@ -12,12 +12,12 @@
 .history::after {
   content: "";
   position: absolute;
+  width: 100%;
+  max-width: inherit;
+  height: 2px;
+  background-color: rgba(66, 86, 122, 0.1);
+  left: 0;
   top: 50%;
-  left: 0px;
-  right: 0px;
-  height: 1px;
-  background-color: #42567a;
-  opacity: 20%;
 }
 
 .history::before {
@@ -31,22 +31,7 @@
   opacity: 20%;
 }
 
-.title {
-  max-width: 300px;
-  position: relative;
-}
-
-.title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -80px;
-  width: 5px;
-  height: 100%;
-  background: linear-gradient(180deg, #5d5fef, #ef5da8);
-}
-
-.dates {
+/* .dates {
   min-height: 400px;
 
   display: flex;
@@ -58,18 +43,18 @@
   font-size: 200px;
   font-style: normal;
   font-weight: 700;
-  line-height: 160px; /* 80% */
+  line-height: 160px;
   letter-spacing: -4px;
 
   color: #ef5da8;
-}
+} */
 
 .pagination {
-  color: #42567A;
+  color: #42567a;
 
-font-family: PT Sans;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

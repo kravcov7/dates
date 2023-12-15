@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 
 import React, { useRef } from "react";
 import styles from "./CardsSlider.module.css";
@@ -16,11 +16,9 @@ interface slideData {
 
 interface SliderProps {
   sliderData: slideData[];
-
 }
 
-export const CardsSlider = ({sliderData}: SliderProps) => {
-
+export const CardsSlider = ({ sliderData }: SliderProps) => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
 
@@ -36,7 +34,7 @@ export const CardsSlider = ({sliderData}: SliderProps) => {
         modules={[Navigation, Pagination]}
         navigation={{
           nextEl: `.${styles.next}`,
-          prevEl: `.${styles.prew}`
+          prevEl: `.${styles.prew}`,
         }}
         onInit={(swiper) => {
           const navigation =
@@ -54,14 +52,15 @@ export const CardsSlider = ({sliderData}: SliderProps) => {
           el: `.${styles.pagination}`,
           clickable: true,
           bulletClass: styles.bullet,
-          bulletActiveClass: styles.activeBullet
+          bulletActiveClass: styles.activeBullet,
         }}
         breakpoints={{
           1070: {
             slidesPerView: 3,
-            spaceBetween: 40
-          }
-        }}>
+            spaceBetween: 40,
+          },
+        }}
+      >
         {sliderData.map((card: slideData) => {
           return (
             <SwiperSlide className={styles.mySlide} key={card.id}>
@@ -72,13 +71,13 @@ export const CardsSlider = ({sliderData}: SliderProps) => {
         })}
       </Swiper>
 
-      <div  className={styles.pagination}></div>
+      <div className={styles.pagination}></div>
 
-      <button ref={prevRef}  className={styles.prew}>
-        4444
+      <button ref={prevRef} className={styles.prew}>
+        Назад
       </button>
-      <button ref={nextRef} className={ styles.next}>
-        55555
+      <button ref={nextRef} className={styles.next}>
+        Вперед
       </button>
     </div>
   );

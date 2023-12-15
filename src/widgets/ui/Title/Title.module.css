@@ -1,0 +1,24 @@
+.title {
+    max-width: 600px;
+  
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "PTSans Bold", sans-serif;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    padding-left: 80px;
+    font-size: 56px;
+    line-height: 120%;
+  }
+  
+  .title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, #5d5fef, #ef5da8);
+  }
+  
