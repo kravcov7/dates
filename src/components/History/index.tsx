@@ -1,17 +1,17 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./History.module.css";
 import { Button } from "@/shared/ui/Button/Button";
 import { CardsSlider } from "@/features/ui/CardsSlider/CardsSlider";
+import data from "@/assets/data";
 
-type Data = {
-  id: number;
-}[];
+function History() {
+  const [currentPointIndex, setCurrentPointIndex] = useState<number>(
+    data[0].id
+  );
 
-interface HistoricalDatesProps {
-  data: Data;
-}
+  const sliderData = data[currentPointIndex - 1].slidersFacts;
 
-function History({ data }: HistoricalDatesProps) {
   return (
     <>
       <div className={styles.history}>
@@ -19,7 +19,8 @@ function History({ data }: HistoricalDatesProps) {
         <div className={styles.dates}>1956 2009</div>
         <div className={styles.pagination}>01/06</div>
         <Button />
-        <CardsSlider />
+        <Button />
+        <CardsSlider sliderData={sliderData} />
       </div>
     </>
   );
