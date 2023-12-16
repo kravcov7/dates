@@ -6,6 +6,7 @@ import { CardsSlider } from "@/features/ui/CardsSlider/CardsSlider";
 import data from "@/assets/data";
 import { Circle } from "@/widgets/ui/Circle/Circle";
 import { Title } from "@/widgets/ui/Title/Title";
+import { Pagination } from "@/features/ui/Pagination/Pagination";
 
 function History() {
   const [currentPointIndex, setCurrentPointIndex] = useState<number>(
@@ -19,9 +20,7 @@ function History() {
       <div className={styles.history}>
         <Title />
         <Circle />
-        <div className={styles.pagination}>01/06</div>
-        <Button />
-        <Button />
+        <Pagination />
         <CardsSlider sliderData={sliderData} />
       </div>
     </>

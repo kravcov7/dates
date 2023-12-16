@@ -1,0 +1,23 @@
+.pagination {
+  position: absolute;
+  bottom: 25%;
+  left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.count {
+  color: #42567a;
+
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
