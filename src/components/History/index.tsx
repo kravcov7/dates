@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import styles from "./History.module.css";
-import { Button } from "@/shared/ui/Button/Button";
 import { CardsSlider } from "@/features/ui/CardsSlider/CardsSlider";
 import data from "@/assets/data";
 import { Circle } from "@/widgets/ui/Circle/Circle";
@@ -13,13 +12,16 @@ function History() {
     data[0].id
   );
 
+  const [startYear, setStartYear] = useState<number>(data[0].years.start);
+  const [endYear, setLastYear] = useState<number>(data[0].years.end);
+
   const sliderData = data[currentPointIndex - 1].slidersFacts;
 
   return (
     <>
       <div className={styles.history}>
         <Title />
-        <Circle />
+        <Circle startYear={startYear} endYear={endYear} />
         <Pagination />
         <CardsSlider sliderData={sliderData} />
       </div>
