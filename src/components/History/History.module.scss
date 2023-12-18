@@ -1,0 +1,42 @@
+.history {
+  border-right: 1px solid rgba(66, 86, 122, 0.1);
+  border-left: 1px solid rgba(66, 86, 122, 0.1);
+  min-height: 100vh;
+  margin: 0 160px 0 320px;
+  padding-top: 170px;
+  padding-left: 80px;
+  padding-right: 80px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    max-width: inherit;
+    height: 2px;
+    background-color: rgba(66, 86, 122, 0.1);
+    left: 0;
+    top: 50%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: 0px;
+    bottom: 0px;
+    width: 1px;
+    background-color: #42567a;
+    opacity: 20%;
+  }
+}
+
+.pagination {
+  color: #42567a;
+
+  font-family: PT Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

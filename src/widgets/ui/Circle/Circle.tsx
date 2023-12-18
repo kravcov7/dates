@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "./Circle.module.css";
+import styles from "./Circle.module.scss";
+import classNames from "classnames";
 
 interface CircleProps {
   startYear: number;
@@ -14,8 +15,8 @@ export const Circle = ({ startYear, endYear }: CircleProps) => {
         <span className={styles.end}>{endYear}</span>
       </div>
 
-      <div className={styles.numberPeriod}>
-        <span className={styles.number}></span>
+      <div className={classNames(styles.numberPeriod, styles.point)}>
+        <span className={styles.number}>5</span>
       </div>
     </div>
   );

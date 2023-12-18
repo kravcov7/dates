@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import styles from "./History.module.css";
+import styles from "./History.module.scss";
 import { CardsSlider } from "@/features/ui/CardsSlider/CardsSlider";
 import data from "@/assets/data";
 import { Circle } from "@/widgets/ui/Circle/Circle";
