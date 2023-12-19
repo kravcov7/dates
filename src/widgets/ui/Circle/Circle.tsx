@@ -17,6 +17,9 @@ export const Circle = ({ startYear, endYear }: CircleProps) => {
 
       <div className={classNames(styles.numberPeriod, styles.point)}>
         <span className={styles.number}>5</span>
+        <span className={styles.number}>5</span>
+        <span className={styles.number}>5</span>
+        <span className={styles.number}>5</span>
       </div>
     </div>
   );
