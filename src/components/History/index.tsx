@@ -16,12 +16,20 @@ function History() {
   const [endYear, setLastYear] = useState<number>(data[0].years.end);
 
   const sliderData = data[currentPointIndex - 1].slidersFacts;
+  const pointsCircle = data.map(({ id, title }) => ({
+    id,
+    title: title,
+  }));
 
   return (
     <>
       <div className={styles.history}>
         <Title />
-        <Circle startYear={startYear} endYear={endYear} />
+        <Circle
+          pointsCircle={pointsCircle}
+          startYear={startYear}
+          endYear={endYear}
+        />
         <Pagination />
         <CardsSlider sliderData={sliderData} />
       </div>

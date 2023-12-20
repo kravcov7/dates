@@ -1,0 +1,27 @@
+.numberPeriod {
+  position: absolute;
+  top: -52%;
+  left: -52%;
+
+  width: 104%;
+  height: 104%;
+}
+
+.number {
+  display: inline-block;
+  // vertical-align: middle;
+  overflow: hidden;
+
+  width: 9px;
+  height: 9px;
+  border: 1px solid blue;
+  border-radius: 50%;
+
+  line-height: 50px;
+
+  background-color: green;
+}
+
+.point {
+  transform: rotate(30deg);
+}
