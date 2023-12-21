@@ -7,8 +7,14 @@ interface PointsCircleProps {
 }
 
 export const PointsCircle = ({ id, title }: PointsCircleProps) => {
+
+  const deg = 30 * id * 2 - 24
   return (
-    <div key={id} className={`styles.numberPeriod styles.point${id}`}>
+    <div
+      key={id}
+      style={{ transform: `rotate(${deg}deg)` }}
+      className={classNames(styles.numberPeriod)}
+    >
       <span className={styles.number}>{id}</span>
     </div>
   );

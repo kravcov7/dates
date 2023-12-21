@@ -11,7 +11,6 @@ function History() {
   const [currentPointIndex, setCurrentPointIndex] = useState<number>(
     data[0].id
   );
-
   const [startYear, setStartYear] = useState<number>(data[0].years.start);
   const [endYear, setLastYear] = useState<number>(data[0].years.end);
 
